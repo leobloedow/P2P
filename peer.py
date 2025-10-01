@@ -178,9 +178,9 @@ def main():
     ap = argparse.ArgumentParser(description="UDP P2P Peer")
     ap.add_argument("--host", default="0.0.0.0")
     ap.add_argument("--port", type=int, default=5001)
-    ap.add_argument("--dir", default="/tmp")
+    ap.add_argument("--dir", default="./tmp")
     ap.add_argument("--peers", default="", help="comma-separated host:port")
-    ap.add_argument("--peers-file", default="/ips.txt", help="path to peers file")
+    ap.add_argument("--peers-file", default="./ips.txt", help="path to peers file")
     ap.add_argument("--poll", type=int, default=2, help="watch interval seconds")
     args = ap.parse_args()
 
